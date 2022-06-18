@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
+
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
@@ -67,16 +68,17 @@ class _HomePageDialogflow extends State<HomePageDialogflow> {
       "message": query,
     };
     http
-        .post(Uri.parse("http://10.0.2.2:5000/predict"),
+        .post(Uri.parse("http://vps-f7d0ecab.vps.ovh.net:5000/predict"),
             headers: headers, body: json.encode(result))
         .then((http.Response response) {
+          final res=json.decode(response.body);
       print("***********************************");
       print(response.body);
-      print("***********************************");
-      List<String> str = response.body.split(":");
+    
+      
       _textController.clear();
       ChatMessage message = new ChatMessage(
-        text: str[1],
+        text: res['answer'],
         name: "Bot",
         type: false,
       );
@@ -90,7 +92,7 @@ class _HomePageDialogflow extends State<HomePageDialogflow> {
     _textController.clear();
     ChatMessage message = new ChatMessage(
       text: text,
-      name: "Promise",
+      name: "User",
       type: true,
     );
     setState(() {
@@ -102,10 +104,8 @@ class _HomePageDialogflow extends State<HomePageDialogflow> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(
-        centerTitle: true,
-        title: new Text("AVFA Chatbot"),
-      ),
+      
+     
       body: new Column(children: <Widget>[
         new Flexible(
             child: new ListView.builder(
