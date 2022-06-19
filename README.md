@@ -7,7 +7,7 @@ L'utilisateur peut envoyer des messages en francais
 
 <img src="https://github.com/avfa-chatbot/avfa_chatbot_flutter/screenshot/Screenshot_20190728-214356.jpg"  title="chatbot">
 
-![Screenshot_20190728-214356.jpg](https://github.com/avfa-chatbot/avfa_chatbot_flutter/blob/name/image.jpg?raw=true)
+![Alt text](https://github.com/avfa-chatbot/avfa_chatbot_flutter/screenshot/Screenshot_20190728-214356.jpg)
 
 
 #### Version Arabe : 
