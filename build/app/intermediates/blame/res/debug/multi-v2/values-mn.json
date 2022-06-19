@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/Andrew/chatbot/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-mn/values-mn.xml",
+            "outputFile": "C:\\Users\\Dora\\avfa_chatbot_flutter\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mn\\values-mn.xml",
             "map": [
                 {
-                    "source": "/Users/Andrew/.gradle/caches/transforms-1/files-1.1/core-1.6.0.aar/137c5405e94936e10d5fc9e055c80cd9/res/values-mn/values-mn.xml",
+                    "source": "C:\\Users\\Dora\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.1.0.aar\\4928e49191bfd5a9d01dd5513708c99d\\res\\values-mn\\values-mn.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
