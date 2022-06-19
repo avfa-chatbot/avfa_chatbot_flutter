@@ -19,9 +19,11 @@ L'utilisateur peut envoyer des messages en arabe
 
 
 ## Executer le projet
-''''
+
+Run project
+```
 flutter pub get
-''''
-''''
+```
+```
 flutter run
-'''
+```
